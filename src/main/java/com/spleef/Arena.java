@@ -8,7 +8,7 @@ public class Arena {
     private final Location a;
     private final Location b;
 
-    public Arena(SpleefPlugin plugin, Location a, Location b){
+    public Arena(SpleefPlugin plugin, Location a, Location b) {
         this.plugin = plugin;
         this.a = a;
         this.b = b;

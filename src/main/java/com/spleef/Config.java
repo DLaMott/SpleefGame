@@ -9,13 +9,13 @@ public class Config {
 
     private final FileConfiguration config;
 
-    public Config(SpleefPlugin plugin){
+    public Config(SpleefPlugin plugin) {
         this.config = plugin.getConfig();
         plugin.getConfig().options().copyDefaults(true);
         plugin.saveConfig();
     }
 
-    public Location readLocation(String configKey){
+    public Location readLocation(String configKey) {
         String line = config.getString(configKey);
         String[] parts = line.split(" ");
 
